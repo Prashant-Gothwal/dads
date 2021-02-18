@@ -1,0 +1,253 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@500&display=swap');
+
+/*  */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.logo-size {
+  font-size: 50px;
+  color: white;
+  margin-top: -15px;
+  font-weight: 100px;
+}
+
+.hero {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(main.jpg);
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.nav-bar {
+  display: flex;
+  padding: 40px 120px;
+}
+
+.nav-links {
+  flex: 1;
+}
+
+.nav-links ul {
+  margin-left: 50px;
+  display: inline;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 25px;
+}
+
+.nav-links ul a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: yellow;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 0;
+  background: yellow;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-links .btn {
+  float: right;
+}
+
+.banner-title {
+  margin: 110px 130px;
+  color: #fff;
+}
+
+.banner-title h1 {
+  font-size: 64px;
+  margin-bottom: 30px;
+}
+
+.banner-title h1 span {
+  color: yellow;
+}
+
+.vertical-bar {
+  height: 100%;
+  background: #000;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.bar-icon {
+  height: 60%;
+  width: 80px;
+}
+
+.bar-icon .fa {
+  margin: 45px 23px;
+  display: block;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.social-icons {
+  height: 35%;
+  width: 80px;
+  background: yellow;
+  text-align: center;
+  padding-top: 27%;
+  bottom: 0;
+  position: absolute;
+}
+
+.social-icons .fa {
+  margin: 15px 23px;
+  display: block;
+  padding: 8px;
+  cursor: pointer;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+.nav-bar .fa {
+  display: none;
+}
+
+/* .container-about {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.about-pic {
+  border-radius: 60%;
+  width: 500px;
+  height: 500px;
+  align-self: center;
+  border: yellow 50px;
+  border-style: solid;
+}
+
+.about-main-text {
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+} */
+
+.about-text{
+  font-weight: bold;
+  margin: 110px 130px;
+  font-size: 80px;
+  color: #ffffff;
+}
+
+.container1 {
+  width: 1000px;
+  color: #ffffff;
+}
+
+.hero-about {
+  height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(about.jpg);
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  margin-top: 1px;
+}
+
+/* Making Website Responsive */
+@media (max-width: 700px) {
+  .vertical-bar {
+    display: none;
+  }
+  .banner-title {
+    margin: 80px;
+    color: #fff;
+  }
+  .banner-title h1 {
+    font-size: 50px;
+  }
+  .nav-bar {
+    padding: 10px 30px;
+  }
+  .fa-bars {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+  }
+  .nav-bar .fa {
+    display: block;
+    color: #fff;
+    margin: 10px 25px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links {
+    height: 100vh;
+    width: 200px;
+    background: #000;
+    top: 0;
+    right: -200px;
+    position: absolute;
+    text-align: left;
+    z-index: 2;
+  }
+  .nav-links ul a {
+    display: block;
+  }
+  .nav-links .btn {
+    float: none;
+    margin-left: 25px;
+    margin-top: 10px;
+  }
+
+  .logo-size {
+    font-size: 50px;
+    color: white;
+    margin-top: -5px;
+  }
+  /* .about-pic {
+    border-radius: 60%;
+    width: 287px;
+    height: 277px;
+    align-self: center;
+    border: yellow 10px;
+    border-style: solid;
+} */
+.container1 {
+  width: 350px;
+  color: #ffffff;
+}
+
+.about-text {
+  margin: 39px;
+  padding: 1px;
+  font-size: 64px;
+  color: white;
+}
+}
